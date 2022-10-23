@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Game</title>
+</head>
+<body>
+
+    <div class="text">
+        <h2>Rock Paper Scissors</h2>
+    </div>
+
+    <div class="player">
+        <img id="rock" src="./kepek/rock.jpg" onclick="Rock()">
+        <img id="paper" src="./kepek/Paper.png" onclick="Paper()">
+        <img id="scrissors" src="./kepek/Scissors.png" onclick="Scissors()">
+    </div>
+
+    <div class="computertext">
+        <h2>Computer's choice:</h2>
+    </div>
+
+    <div class="hold">
+        <img id="questionmark" src="./kepek/question.jpg">
+    </div>
+    
+    <div class="computer">
+        <img id="enemyrock" src="./kepek/rock.jpg">
+        <img id="enemypaper" src="./kepek/Paper.png">
+        <img id="enemyscrissors" src="./kepek/Scissors.png">
+    </div>
+
+    <button onclick="restart()" class="restart">Újra!</button>
+
+    <div class="status">
+        <h1>Eredmény:</h1>
+        <hr>
+        <p id="win">Győzelem: 0</p>
+        <p id="draw">Döntetlen: 0</p>
+        <p id="lose">Vereség: 0</p>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
